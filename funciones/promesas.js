@@ -12,7 +12,7 @@ function promesa(funcion, numero1, numero2) {
         if (!numero1 || !numero2) {
             reject('Error, entrada incorrecta');
         } else {
-            accept(funcion(Number(numero1), Number(numero2)));
+            accept(funcion(numero1, numero2));
         }
     })
 }

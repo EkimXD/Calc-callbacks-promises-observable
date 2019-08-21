@@ -1,4 +1,5 @@
 const prompts = require('prompts');
+const {retornaResultado}=require('../funciones/respuesta')
 
 module.exports.rutina = (funciones) => {
     (async () => {
@@ -27,7 +28,6 @@ module.exports.rutina = (funciones) => {
                 message: 'Ingrese el segundo numero: '
             }
         ]);
-        console.log(funciones.suma(pantalla2.numero1, pantalla2.numero2));
-        //console.log('El resultado de su operacion es:', retornaResultado(funciones, pantalla1.value, pantalla2.numero1, pantalla2.numero2));
+        retornaResultado(funciones, pantalla1.value, pantalla2.numero1, pantalla2.numero2);
     })();
 };
