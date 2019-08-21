@@ -1,5 +1,4 @@
-const {of, from} = require('rxjs');
-const {map, mergeMap} = require('rxjs/operators');
+const {from} = require('rxjs');
 
 module.exports.retornaResultado=(funcionesCPO, operacion, numero1, numero2) =>{
     let variableAux=definirOperacion(funcionesCPO, operacion, numero1, numero2);
