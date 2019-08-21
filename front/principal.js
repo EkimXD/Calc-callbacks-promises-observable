@@ -9,7 +9,7 @@ const {event}=require('../eventos/eventos');
         choices: [
             { title: 'Por Callbacks', value: 'callback' },
             { title: 'Por Promesas', value: 'promesa' },
-            { title: 'Por Callbacks', value: 'observable' }
+            { title: 'Por Observables', value: 'observable' }
         ],
         initial: 0
     });
